@@ -1,10 +1,14 @@
-@import "reset";
+
+
+@import "~include-media/dist/_include-media.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
+//@import "reset";
 @import "fonts";
 @import "variables";
 @import "global";
 
-@import "~include-media/dist/_include-media.scss";
-@import "~bootstrap/scss/bootstrap.scss";
+
 
 .section-hello-world{
     min-height: 100vh;
@@ -19,6 +23,10 @@
         align-items: center;
         h1{
             font-weight: bold;
+            @include media(">xs"){
+                color:dodgerblue;
+            }
+
         }
         h2{
             font-weight: lighter;
